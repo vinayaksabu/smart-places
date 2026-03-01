@@ -184,4 +184,40 @@ body {
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 700;
+}/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 600px) {
+  .nothing-container {
+    padding: 2rem 1rem;
+  }
+
+  .nothing-header h1 {
+    font-size: 2.2rem; /* Shrinks the massive title */
+    letter-spacing: -1px;
+  }
+
+  .nothing-search-pill {
+    flex-direction: column; /* Stacks the input and button on top of each other */
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .nothing-input {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid #d4d4d8;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    box-sizing: border-box; /* Keeps it from stretching off-screen */
+  }
+
+  .nothing-btn {
+    width: 100%; /* Makes the button stretch fully across the phone screen */
+  }
+
+  .nothing-grid {
+    grid-template-columns: 1fr; /* Forces the cards into a single column */
+  }
 }
